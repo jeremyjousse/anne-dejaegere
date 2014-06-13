@@ -1,0 +1,8 @@
+{
+  "type": "sftp",
+  "host": "127.0.0.1",
+  "user": "jerry",
+  "password": "3FjI7tBdVx",
+  "port": "22",
+  "remote_path": "/Users/jerry/Sites/anne-dejaegere"
+}
