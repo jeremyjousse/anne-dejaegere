@@ -321,6 +321,9 @@ left: 0;
   line-height: 20px;
 }
 
+#logo{
+  margin-top:-15px;
+}
 
 
 .brand-title{
@@ -361,6 +364,26 @@ left: 0px;
 right: 0px;
 }
 
+#bg-text{
+  
+position: absolute;
+text-align: center;
+color: white;
+top: 25%;
+width: 436px;
+left: 50%;
+margin-left: -218px;
+
+}
+
+#bg-scroll-down {
+margin-top: -1007px;
+text-align: center;
+height: 97px;
+width: 100%;
+background: url('http://qrul.nl/wp-content/themes/qrulmedia-bootstrap4/img/arrowdown.png') center 30px no-repeat;
+}
+
 /* ==========================================================================
    circular img
    ========================================================================== */
@@ -384,6 +407,16 @@ right: 0px;
  -moz-border-radius: 200px;
 }
 
+.img-circular-800{
+ width: 400px;
+ height: 800px;
+ background-size: cover;
+ display: block;
+ border-radius: 200px;
+ -webkit-border-radius: 200px;
+ -moz-border-radius: 200px;
+}
+
 #img-cabinet{
   background-image: url('/img/cabinet.jpg');
   float: right;
@@ -393,6 +426,17 @@ right: 0px;
   background-image: url('/img/pedicurie.jpg');
 }
 
+#img-posturologie{
+  background-image: url('/img/posturologie.jpg');
+}
+
+#img-podologie{
+  background-image: url('/img/podologie.jpg');
+}
+
+#img-diabetologie{
+  background-image: url('/img/diabetologie.jpg');
+}
 
 /* ==========================================================================
    rubrique divs
@@ -417,3 +461,16 @@ right: 0px;
 #pedicurie{
   background: url('/img/bg-patterns/2.png');
 }  
+
+#posturologie{
+  background: url('/img/bg-patterns/1.png');
+}  
+
+#podologie{
+  background: url('/img/bg-patterns/2.png');
+} 
+
+
+#diabetologie{
+  background: url('/img/bg-patterns/1.png');
+}   
