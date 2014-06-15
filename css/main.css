@@ -281,6 +281,13 @@ margin-left: auto;
   max-width: 1170px;
   }
 }
+
+#footer{
+  height: 40px;
+  width: 100%;
+  background: #428bca;
+  text-align: center;
+}
 /* ==========================================================================
    Nav bar
    ========================================================================== */
@@ -345,6 +352,53 @@ margin-left: 30px;
   display: block;
 }
 
+#nav li.active{
+  background: #428bca;
+}
+
+#nav li.active  a{
+  color: #FFFFFF;
+}
+
+#nav li.active  a:hover{
+  color: #428bca;
+}
+
+.nav-effect a::before,
+.nav-effect a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.nav-effect a::before {
+  margin-right: 5px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.nav-effect a::after {
+  margin-left: 5px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+
+.nav-effect a:hover::before,
+.nav-effect a:hover::after,
+.nav-effect a:focus::before,
+.nav-effect a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px);
+}
+
 /* ==========================================================================
    bg
    ========================================================================== */
@@ -365,7 +419,6 @@ right: 0px;
 }
 
 #bg-text{
-  
 position: absolute;
 text-align: center;
 color: white;
@@ -373,15 +426,28 @@ top: 25%;
 width: 436px;
 left: 50%;
 margin-left: -218px;
-
+background-color: rgba(0, 0, 0, 0.3);
+ border-radius: 20px;
+ -webkit-border-radius: 20px;
+ -moz-border-radius: 20px;
 }
 
+#bg-text h1{
+  font-size: 25px;
+}
+
+
+
 #bg-scroll-down {
-margin-top: -1007px;
+margin-top: -107px;
 text-align: center;
 height: 97px;
 width: 100%;
 background: url('http://qrul.nl/wp-content/themes/qrulmedia-bootstrap4/img/arrowdown.png') center 30px no-repeat;
+}
+
+a.scroll{
+  color: #FFFFFF
 }
 
 /* ==========================================================================
@@ -451,7 +517,19 @@ background: url('http://qrul.nl/wp-content/themes/qrulmedia-bootstrap4/img/arrow
 /* ==========================================================================
    cabinet
    ========================================================================== */
+#coordonnees-cabinet{
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+color: white;
+width: 436px;
 
+
+background-color: rgba(0, 0, 0, 0.3);
+ border-radius: 20px;
+ -webkit-border-radius: 20px;
+ -moz-border-radius: 20px;
+}
 
 
 #cabinet{

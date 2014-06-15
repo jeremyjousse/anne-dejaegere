@@ -19,13 +19,13 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <nav class="navbar">
+        <nav class="navbar" >
           <div class="container">
             <div class="navbar-brand">
-  			    	<a href="#top"><img src="img/pieds.png" alt="logo" id="logo"> <p class="brand-title">Anne Dejaegere</p></a>
+  			    	<a href="#top"><img src="img/pieds.png" alt="logo" id="logo"> <p class="brand-title">Anne Dejaegere </p></a> 06 73 29 23 62
   			    </div>
 
-            <ul class="nav navbar-nav navbar-right">
+            <ul id="nav" class="nav navbar-nav navbar-right nav-effect">
               <li><a href="#cabinet">Le Cabinet</a></li>
               <li><a href="#pedicurie">Pédicurie</a></li>
               <li><a href="#posturologie">Posturologie</a></li>
@@ -36,24 +36,23 @@
         </nav>
         <div id="bg" style="height: 871px; width: 1440px;">
             <img id="background" src="img/hp.jpg" style="min-height: 100%; width: 100%;">
-            
+        </div>
   <div id="bg-text">
-    <p>Wij ontwikkelen en <br>creëren met passie:</p>
-    <h1>WEBSITES<br>
-     MAATWERK<br>
-     &amp; DESIGN</h1>
-    <p>In het noorden van het land</p>
+    <p>Le cabinet d'Anne Dejaegere<br>
+    à Faches Thumesnils<br>
+    vous accueil pour des soins de :</p>
+    <h1>PEDICURIE<br>
+     POSTUROLOGIE<br>
+     PODOLOGIE<br>
+     &amp; DIABETOLOGIE</h1>
   </div>
 
-  <a class="scroll" data-speed="1500" data-easing="easeInOutCubic" href="#overons">
+  <a class="scroll" data-speed="1500" data-easing="easeInOutCubic" href="#cabinet">
     <div id="bg-scroll-down">
-      <h5>Maar hoe doen jullie dat?</h5>
+      <h5>Découvrez le cabinet</h5>
       <div class="white"></div>
     </div>
   </a>
-
-
-        </div>
         <div id="cabinet" class="section">
           <a name="cabinet"></a>
           <div class="container">
@@ -66,7 +65,15 @@
                 <div class="col-md-6">
                   Le cabinet de Podologie, Pédicurie d'Anne Dejaegère est implanté au sein du centre de rééducation   libéral « Kinébalné’O », 29, rue Henri Barbusse à Faches Thumesnil, aux portes de Lille.<br>
                   <br>
-                  Les consultations se font au cabinet et à domicile du Lundi au Vendredi sur rendez-vous.
+                  Les consultations se font au cabinet et à domicile du Lundi au Vendredi sur rendez-vous.<br><br>
+                  <div id="coordonnees-cabinet">
+                    29 rue Henri Barbusse<br>
+                    59155 Faches Thumesnil<br>
+                    Mobile : 06 73 29 23 62<br>
+                    Tel : 03 20 88 25 32<br>
+                    Fax : 09 79 94 97 32<br>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -173,7 +180,9 @@ La consultation du podologue est naturellement indispensable lorsque le patient 
           </div>
         </div>
       </div>
-
+<div id="footer">
+  
+</div>
 
 
 
@@ -190,9 +199,9 @@ La consultation du podologue est naturellement indispensable lorsque le patient 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
         <script src="js/vendor/bootstrap.js"></script>
-
+        <script src="js/vendor/jquery.nav.js"></script>
+        <script src="js/main.js"></script>
 
 <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyAkn7eTgtjeOGZDAhfi4XTZSmMnevD5yog&sensor=false"></script>
 <script>
@@ -201,19 +210,15 @@ function initialize(plaats, start)
 
 if ( !$("#" + plaats + 'link').hasClass("active") || start == 1) {
 
-if(plaats == 'groningen'){
-  myCenter=new google.maps.LatLng(53.214154,6.601067);
-  launchcafe=new google.maps.LatLng(53.213807,6.569395);
-}
-if(plaats == 'lemmer'){
-  myCenter=new google.maps.LatLng(52.847364,5.737782);
-  launchcafe=new google.maps.LatLng(52.846865,5.716414);
+if(plaats == 'anne-dejaegere'){
+  myCenter=new google.maps.LatLng(50.5889356,3.0819339,15);
+  cabinet=new google.maps.LatLng(50.587750, 3.077897);
 }
 
 
 var mapProp = {
   center:myCenter,
-  zoom: 14,
+  zoom: 15,
   scrollwheel: false,
   styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}],
   disableDefaultUI:true,      
@@ -224,10 +229,11 @@ var mapProp = {
 
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-var markerImage = 'wp-content/themes/qrulmedia-bootstrap4/img/qrulpointer.png';
+
+var markerImage = new google.maps.MarkerImage("/img/gmap-marker.png", null, null, null, new google.maps.Size(50,50));
 
 var marker=new google.maps.Marker({
-  position:launchcafe,
+  position:cabinet,
   icon: markerImage
   });
 
@@ -239,7 +245,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 }
 </script>
-<script>initialize('groningen',1);</script>
+<script>initialize('anne-dejaegere',1);</script>
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
